@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sigma-projects/countries/static/css/main.599bd11a.chunk.css",
+    "main.js": "/sigma-projects/countries/static/js/main.2a1e4b9b.chunk.js",
+    "main.js.map": "/sigma-projects/countries/static/js/main.2a1e4b9b.chunk.js.map",
+    "runtime-main.js": "/sigma-projects/countries/static/js/runtime-main.9bc2b669.js",
+    "runtime-main.js.map": "/sigma-projects/countries/static/js/runtime-main.9bc2b669.js.map",
+    "static/js/2.f83d0945.chunk.js": "/sigma-projects/countries/static/js/2.f83d0945.chunk.js",
+    "static/js/2.f83d0945.chunk.js.map": "/sigma-projects/countries/static/js/2.f83d0945.chunk.js.map",
+    "static/js/3.680e3a03.chunk.js": "/sigma-projects/countries/static/js/3.680e3a03.chunk.js",
+    "static/js/3.680e3a03.chunk.js.map": "/sigma-projects/countries/static/js/3.680e3a03.chunk.js.map",
+    "index.html": "/sigma-projects/countries/index.html",
+    "static/css/main.599bd11a.chunk.css.map": "/sigma-projects/countries/static/css/main.599bd11a.chunk.css.map",
+    "static/js/2.f83d0945.chunk.js.LICENSE.txt": "/sigma-projects/countries/static/js/2.f83d0945.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9bc2b669.js",
+    "static/js/2.f83d0945.chunk.js",
+    "static/css/main.599bd11a.chunk.css",
+    "static/js/main.2a1e4b9b.chunk.js"
+  ]
+}
