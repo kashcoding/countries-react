@@ -1,38 +1,154 @@
+body {
+  background: url("https://getwallpapers.com/wallpaper/full/0/1/3/788006-full-size-world-map-desktop-wallpaper-2560x1600-image.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: white;
+  overflow: hidden;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(2.5px);
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.country-btn {
+  margin: 0.1rem;
+  font-weight: 500;
+  height: max-content;
+  width: 15rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 12pt;
+  white-space: normal;
+  word-wrap: break-word;
+  border: solid 1px white;
+  border-radius: 5px;
+  background-color: #bbde9e;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  -webkit-appearance: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flag {
+  width: 20rem;
+  height: 12rem;
+  object-fit: cover;
+  object-position: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
+  border: solid white;
+  border-radius: 5px;
+  height: fit-content;
+  width: 20rem;
+  padding: 1rem 3.5rem 0.5rem 3.5rem;
+  margin: 1rem;
+  background-color: #7fd0f1;
+  position: sticky;
+  top: 20px;
+  word-wrap: break-word;
+  font-family: "Roboto Mono", monospace;
+  overflow: scroll;
+}
+
+.countries {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border: solid white;
+  border-radius: 5px;
+  padding: 0 1rem 1rem 1rem;
+  width: 16rem;
+  height: max-content;
+  margin: 0 1rem 1rem 0;
+  background-color: #7fd0f1;
+}
+
+#select {
+  background-color: #bbde9e;
+  padding: 1rem 1rem 1rem 1rem;
+  border: solid white;
+  border-radius: 5px;
+  width: 16rem;
+  text-align: center;
+}
+
+.sidebar {
+  height: 100vh;
+}
+
+.scroll {
+  height: 90%;
+  overflow: scroll;
+  padding: 0 0 2rem 0;
+}
+
+#scroll-btns {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  height: 6rem;
+  align-items: center;
+}
+
+#letter {
+  padding: 0.6rem 0.6rem 0.6rem 0.7rem;
+  margin: 0.5rem;
+  border: solid 1px white;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  text-justify: center;
+  font-size: 22pt;
+  background-color: #bbde9e;
+}
+
+.label {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  font-size: 16pt;
+  padding: 0;
+}
+
+#name {
+  font-size: 20pt;
+  text-decoration: underline;
+}
+
+.kash {
+  font-family: "Roboto Mono", monospace;
+  position: inherit;
+  padding: 0.5rem;
+  justify-self: center;
+  text-align: center;
+  background-color: #7fd0f1;
+  font-size: 10pt;
+}
+
+a {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a:hover {
+  font-style: italic;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#subregion {
+  border: solid 1pt white;
+  padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+  border-radius: 5px;
+  background-color: #bbde9e;
+}
+
+#emoji {
+  font-size: 60pt;
+  line-height: 50pt;
 }
