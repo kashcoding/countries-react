@@ -9,9 +9,6 @@ class Sidebar extends React.Component {
     countryBtn.style.fontSize = `14pt`;
     countryBtn.style.textShadow = "0 0 5px #000000, 0 0 5px #000000";
     countryBtn.style.opacity = `0.9`;
-    if (!this.props.countryList[key].flag) {
-      console.log(this.props.countryList[key].name);
-    }
   }
 
   changeBtnOnLeave(id) {

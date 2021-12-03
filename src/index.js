@@ -7,7 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 ReactDOM.render(
   <React.StrictMode>
     <section className="kash">
-      Made by <a href="https://github.com/kashcoding">Kasia Dutch</a> using{" "}
+      Built by <a href="https://github.com/kashcoding">Kasia Dutch</a> using{" "}
       <a href="https://reactjs.org/">React</a> and{" "}
       <a href="https://countriesnow.space/">CountriesNow API</a>
     </section>
