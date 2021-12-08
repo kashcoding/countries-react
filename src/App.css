@@ -36,6 +36,13 @@ body {
   -webkit-appearance: none;
 }
 
+.hover {
+  font-size: 14pt;
+  text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+  opacity: 0.9;
+  background-size: contain;
+}
+
 .flag {
   width: 20rem;
   height: 12rem;

@@ -2,21 +2,16 @@ import React from "react";
 import "./App.css";
 
 class Sidebar extends React.Component {
-  changeBtnOnEnter(id, key) {
-    const countryBtn = document.getElementById(id);
-    countryBtn.style.backgroundImage = `url('${this.props.countryList[key].flag}')`;
-    countryBtn.style.backgroundSize = `contain`;
-    countryBtn.style.fontSize = `14pt`;
-    countryBtn.style.textShadow = "0 0 5px #000000, 0 0 5px #000000";
-    countryBtn.style.opacity = `0.9`;
+  state = {
+    hover: null,
+  };
+
+  changeBtnOnEnter(key) {
+    this.setState({ hover: key });
   }
 
-  changeBtnOnLeave(id) {
-    const countryBtn = document.getElementById(id);
-    countryBtn.style.backgroundImage = `none`;
-    countryBtn.style.fontSize = `12pt`;
-    countryBtn.style.opacity = `1`;
-    countryBtn.style.textShadow = "none";
+  changeBtnOnLeave() {
+    this.setState({ hover: null });
   }
 
   displayCountry = (letter) => {
@@ -30,17 +25,24 @@ class Sidebar extends React.Component {
           return (
             <input
               type="button"
-              className="country-btn"
+              className={
+                this.state.hover === key ? "country-btn hover" : "country-btn"
+              }
               id={id}
               key={key}
               value={this.props.checkName(country.name)}
               onMouseEnter={() => {
-                this.changeBtnOnEnter(id, key);
+                this.changeBtnOnEnter(key);
               }}
-              onMouseLeave={() => this.changeBtnOnLeave(id)}
+              onMouseLeave={() => this.changeBtnOnLeave()}
               onClick={(e) => {
                 this.props.handleClick(e, country);
               }}
+              style={
+                this.state.hover === key
+                  ? { backgroundImage: `url(${country.flag})` }
+                  : null
+              }
             ></input>
           );
         }
